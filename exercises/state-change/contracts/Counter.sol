@@ -1,9 +1,13 @@
 pragma solidity 0.4.23;
 
 contract Counter {
-    // define public count variable (uint) to store number of ticks
-
-    // implement tick() to increment counter
-
-    // implement reset() to reset counter back to 0
+    uint public count = 0;
+    function tick() returns (uint) {
+        count += 1;
+        return count;
+    }
+    function reset() returns (uint){
+      count = 0;
+      return count;
+    }
 }
