@@ -5,7 +5,7 @@ contract Balances {
   mapping(address => uint) public balances;
 
   function deposit() payable public{
-    require(msg.value >= 1 finney);
+    require(msg.value >= 1);
     balances[msg.sender] += msg.value;
   }
 }
