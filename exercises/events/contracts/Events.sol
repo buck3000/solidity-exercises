@@ -16,10 +16,12 @@ contract Events is Airdrop {
     }
 
     function removeAddress(address _address) public {
+        // use super to call removeAddress(address) from Airdrop
         // emit AddressAdded event using low-level log1 function insteadof emit
     }
 
     function airdrop(uint _value) public {
+        // use super to call airdrop(value) from Airdrop
         // emit Airdrop event
     }
 }

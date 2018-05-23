@@ -25,6 +25,6 @@ contract Destruct {
 
     function delegatePrune(address _address) public {
         // 3. implement delegatecall to delegate.prune(address)
-        // 4. delegatecall returns true/false on success/failure, revert in case of the failure
+        // 4. revert in case of the failure
     }
 }
